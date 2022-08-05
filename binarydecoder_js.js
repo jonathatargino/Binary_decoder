@@ -34,7 +34,6 @@ const decToBin = function(dec){
 const isBin = function(bin) {
   let regex = /[0-1]/ig
   let inputMatch = bin.toString().match(regex)
-  console.log(inputMatch)
   if(inputMatch.join('') === bin.toString()){
     return true
   }else {
@@ -125,7 +124,7 @@ button.addEventListener("click", (event) => {
         }
         break;
       case 'convert bin to text':
-        if(isBin(input)){
+        if(input.split(' ').every(num => isBin(num) === true)){
           result = binToText(input)
         }else {
           alert("Bin numbers only includes 0 and 1")
