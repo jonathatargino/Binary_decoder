@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Decoder</title>
+    <link rel="stylesheet" href="binarydecoder_css.css">
+</head>
+    <body>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+        <div class="container">
+            <h1 class="graytext">Binary decoder</h1>
+            <div class="block">
+                <form action="">
+                <div id="operations">
+                        <div class="operation-div">
+                            <input type="radio" name="operation" id="bin-to-dec" value="bin-to-dec" checked="checked">
+                            <label for="bin-to-dec">Bin to Dec</label>
+                        </div>
+
+                        <div class="operation-div">
+                            <input type="radio" name="operation" id="dec-to-bin" value="dec-to-bin" >
+                            <label for="bin-to-dec">Dec to Bin</label>
+                        </div>
+
+                        <div class="operation-div">
+                            <input type="radio" name="operation" id="bin-to-text" value="bin-to-text">
+                            <label for="bin-to-dec">Bin to Text</label>
+                        </div>
+
+                        <div class="operation-div">
+                            <input type="radio" name="operation" id="text-to-bin" value="text-to-bin" >
+                            <label for="bin-to-dec">Text to Bin</label>
+                        </div>
+                </div>
+            </div>
+                    <div id="input-div">
+                        <div class="textarea-div">
+                            <textarea name="bin-input" id="bin-input" cols="20" rows="7" class="greenbox textarea"></textarea>
+                            <br>
+                            <label for="bin-input" class="textarea-label graytext" id="instruction">Your binary number</label>
+                        </div>
+                        <div class="button-div">
+                            <button type="button" id="button">Decode <i class="fas fa-angle-double-right"></i></button>
+                            <br>
+                            <button type="button" class="clear">
+                                Clear
+                            </button>
+                        </div>
+                        <div  class="textarea-div">
+                            <textarea name="bin-output" id="bin-output" cols="20" rows="7" readonly class="greenbox textarea"></textarea>
+                            <br>
+                            <label for="bin-output graytext" class="textarea-label graytext">Result</label>
+                        </div>
+                </div>
+                </form>
+        </div>
+        <script src="binarydecoder_js.js"></script>
+    </body>
+</html>
